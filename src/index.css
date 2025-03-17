@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+
+  --color-main:"#9333EA" ;
+
+}
