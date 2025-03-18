@@ -1,12 +1,13 @@
 import { decrement, increment } from "../redux/features/counter/CounterSlice";
-import { RootState } from "../redux/store"
-import { useDispatch, useSelector } from "react-redux"
+
+
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
 
 
 const Banner = () => {
-  const count = useSelector((state: RootState) => state.counter.value);
+  const count = useAppSelector((state) => state.counter.value);
   console.log(count);
-   const dispatch = useDispatch();
+   const dispatch = useAppDispatch();
   return (
     <div className="flex justify-center items-center h-[50vh]">
       <h1 className="text-main">Heloo World </h1>
